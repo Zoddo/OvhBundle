@@ -1,0 +1,6 @@
+/.idea/
+/vendor/
+/coverage/
+/src/
+composer.lock
+composer.phar

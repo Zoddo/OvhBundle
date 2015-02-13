@@ -1,0 +1,22 @@
+{
+  "name": "zoddo/ovh-bundle",
+  "description": "An OVH API integration for Symfony2",
+  "keywords": ["ovh", "api", "integration", "symfony"],
+  "homepage": "https://github.com/Zoddo/OvhBundle",
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Zoddo",
+      "email": "zoddo.ino@gmail.com"
+    }
+  ],
+  "require": {
+    "symfony/dependency-injection" : "~2.3",
+    "symfony/config" : "~2.3",
+    "symfony/http-kernel": "~2.3",
+    "ovh/ovh": "~1.1"
+  },
+  "autoload": {
+    "psr-4": { "Zoddo\\OvhBundle\\": "" }
+  }
+}
