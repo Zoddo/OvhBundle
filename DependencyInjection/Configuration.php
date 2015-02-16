@@ -16,7 +16,7 @@ class Configuration implements ConfigurationInterface
 	public function getConfigTreeBuilder()
 	{
 		$treeBuilder = new TreeBuilder();
-		$rootNode = $treeBuilder->root('zoddo_ovh.api');
+		$rootNode = $treeBuilder->root('ovh');
 		$rootNode
 			->children()
 			->scalarNode('key')->isRequired()->cannotBeEmpty()->end()

@@ -1,11 +1,11 @@
 services:
-    zoddo_ovh.api:
+    ovh.api:
         class: Zoddo\OvhBundle\OvhApi
         arguments:
-            - "%zoddo_ovh.api.key%"
-            - "%zoddo_ovh.api.secret%"
-            - "%zoddo_ovh.api.endpoint%"
-            - "@=container.hasParameter('zoddo_ovh.api.ckey') ? parameter('zoddo_ovh.api.ckey') : null"
+            - "%ovh.key%"
+            - "%ovh.secret%"
+            - "%ovh.endpoint%"
+            - "@=container.hasParameter('ovh.ckey') ? parameter('ovh.ckey') : null"
 
-    ovh.api:
-        alias: zoddo_ovh.api
+    ovh:
+        alias: ovh.api

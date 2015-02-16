@@ -20,10 +20,10 @@ class OvhExtension extends Extension
 		$configuration = new Configuration();
 		$config = $this->processConfiguration($configuration, $configs);
 
-		$container->setParameter('zoddo_ovh.key', $config['ovh_key']);
-		$container->setParameter('zoddo_ovh.secret', $config['ovh_secret']);
-		$container->setParameter('zoddo_ovh.endpoint', $config['ovh_endpointe']);
-		$container->setParameter('zoddo_ovh.ckey', $config['ovh_ckey']);
+		$container->setParameter('ovh.key', $config['ovh_key']);
+		$container->setParameter('ovh.secret', $config['ovh_secret']);
+		$container->setParameter('ovh.endpoint', $config['ovh_endpointe']);
+		$container->setParameter('ovh.ckey', $config['ovh_ckey']);
 
 		$loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
 		$loader->load('services.yml');
